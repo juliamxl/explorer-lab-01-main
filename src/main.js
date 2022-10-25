@@ -123,9 +123,3 @@ function updateExpirationDate(date){
     Expiration.innerText = date.length === 0 ? "02/32" : date
 }
 
-function MudaBg(corUm, corDois){
-
-}
-
-
-
