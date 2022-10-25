@@ -7,9 +7,9 @@ const ccLogo = document.querySelector(".cc-logo span:nth-child(2) img")
 
 function SetCardType(tipo){
     const colors = {
-        "visa": ["#2D57F2","#436D99"],
+        "visa": ["#F22DBB","#F44646"],
         "mastercard": ["#C69347", "#DF6F29"],
-        "cielo" : ["#A60F0F", "#E800A7"],
+        "cielo" : ["#2E344B", "#0F68C6"],
         "default": ["black", "gray"],
     }
     CorBg1.setAttribute("fill", colors[tipo][0])
@@ -91,6 +91,7 @@ cardHolder.addEventListener("input", () =>{
     const ccHolder = document.querySelector(".cc-holder .value")
 
     ccHolder.innerText = cardHolder.value.length === 0 ? "FULANO DA SILVA" : cardHolder.value
+    cardHolder.maxLenght = 15;
 })
 
 securityCodeMasked.on("accept", () =>{
@@ -122,6 +123,9 @@ function updateExpirationDate(date){
     Expiration.innerText = date.length === 0 ? "02/32" : date
 }
 
+function MudaBg(corUm, corDois){
+
+}
 
 
 
